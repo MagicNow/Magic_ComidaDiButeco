@@ -28,7 +28,7 @@ $post_title = get_the_title($postid);
   <?php
 
     $thiscat = get_category( get_query_var( 'cat' ) );
-    $catid = $thiscat->cat_ID;
+    // $catid = $thiscat->cat_ID;
     // $parent = $thiscat->category_parent;
 
     $args = array( 'category' => $parentID, 'post_type' =>  'post', 'posts_per_page'   => -1 );
