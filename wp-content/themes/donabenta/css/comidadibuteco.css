@@ -239,6 +239,12 @@ p {
   position: relative;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 768px) {
+  .footer {
+    background-size: cover;
+    height: 150px;
+  }
+}
 .footer::after {
   display: block;
   position: absolute;
