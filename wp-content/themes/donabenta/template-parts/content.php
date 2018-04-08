@@ -29,7 +29,7 @@ $post_title = get_the_title($postid);
 
     $thiscat = get_category( get_query_var( 'cat' ) );
     $catid = $thiscat->cat_ID;
-    $parent = $thiscat->category_parent;
+    // $parent = $thiscat->category_parent;
 
     $args = array( 'category' => $parentID, 'post_type' =>  'post', 'posts_per_page'   => -1 );
     $postslist = get_posts( $args );
@@ -53,7 +53,7 @@ $post_title = get_the_title($postid);
 
 <div class="col-md-offset-1 col-md-9">
     <div class="col-md-12">
-    	<h1 class="entry-title"><?php echo $post_title?></h1>
+      <h1 class="entry-title"><?php echo $post_title?></h1>
 
       <h3><?php the_field('nome_do_prato', $postid); ?></h3>
 
