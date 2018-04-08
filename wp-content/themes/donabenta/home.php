@@ -82,7 +82,7 @@ Template Name: home
               <div class="container">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true"><img src="?php echo get_template_directory_uri(); ?>/img/x.png"></span>
+                        <span aria-hidden="true"><img src="<?php echo get_template_directory_uri(); ?>/img/x.png"></span>
                     </button>
                     <h5 class="modal-title" id="regulamentoLabel">Regulamento</h5>
                 </div>
