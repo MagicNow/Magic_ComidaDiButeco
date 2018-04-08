@@ -74,6 +74,34 @@ Template Name: home
             </div>
         </div>
     </section>
+
+        <!-- Modal -->
+    <div class="modal fade" id="regulamento" tabindex="-1" role="dialog" aria-labelledby="regulamentoLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content ">
+              <div class="container">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><img src="?php echo get_template_directory_uri(); ?>/img/x.png"></span>
+                    </button>
+                    <h5 class="modal-title" id="regulamentoLabel">Regulamento</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan libero tellus, sit amet sodales arcu posuere id. Proin id nisi rutrum, commodo nunc a, auctor nibh</p>
+                    <p>Quisque in eros sed arcu scelerisque efficitur. Sed rhoncus ullamcorper quam ac consequat. Vivamus fringilla magna metus, eget dictum sem rhoncus ac.
+                        <p>Pellentesque in tempus libero, et viverra metus. Suspendisse at libero a diam ultrices posuere. Aenean felis ipsum, tincidunt et nunc sit amet, </p>
+                        vestibulum ultricies lacus.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan libero tellus, sit amet sodales arcu posuere id. Proin id nisi rutrum, commodo </p>
+                    nunc a, auctor nibh
+                    <p>Quisque in eros sed arcu scelerisque efficitur. Sed rhoncus ullamcor.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
     <footer class="footer">
     </footer>
 

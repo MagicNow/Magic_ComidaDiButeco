@@ -119,6 +119,9 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+a:focus {
+  outline: none;
+}
 /* Fonts */
 @font-face {
   font-family: 'fourseasons';
@@ -195,108 +198,6 @@ body {
 p {
   -webkit-font-smoothing: none;
 }
-.donabenta__header .donabenta__logo-link {
-  position: absolute;
-  display: block;
-  width: 182px;
-  height: 182px;
-  top: 15px;
-  left: 50%;
-  margin-left: -90px;
-  z-index: 999;
-  background: url(../img/header/donabenta__logo.png);
-  background-size: cover;
-  text-indent: -999em;
-}
-.donabenta__header {
-  background: url(../img/header/donabenta__header-pattern.png);
-  position: relative;
-  display: block;
-  width: 100%;
-  min-width: 320px;
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  height: 280px;
-}
-.donabenta__linhas h1 {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  padding: 20px 0;
-  color: #674707;
-  text-transform: uppercase;
-  font-size: 36px;
-  font-family: 'fourseasons';
-  font-weight: 700;
-  text-align: center;
-  width: 520px;
-  line-height: 1;
-  letter-spacing: 8.5px;
-}
-.donabenta__linhas h1:before {
-  display: inline;
-  content: '';
-  background: url(../img/donabenta__arrow-left.png);
-  width: 32px;
-  height: 19px;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-.donabenta__linhas h1:after {
-  display: inline;
-  content: '';
-  background: url(../img/donabenta__arrow-right.png);
-  width: 32px;
-  height: 19px;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-.donabenta__recipes-related h1:after,
-.donabenta__produtos h1:after {
-  display: inline;
-  content: " ";
-  width: 32px;
-  height: 19px;
-  position: absolute;
-  right: 0;
-  top: 20px;
-}
-.donabenta__recipes-related h1:after {
-  background: url(../img/icon-donabenta__flower.png) !important;
-  width: 29px !important;
-  height: 29px !important;
-}
-.donabenta__recipes-related h1:before {
-  background: url(../img/icon-donabenta__flower.png) !important;
-  width: 29px !important;
-  height: 29px !important;
-}
-.donabenta__recipes-related h1,
-.donabenta__produtos h1 {
-  position: relative;
-  display: inline-block;
-  margin: 0 auto 30px;
-  padding: 20px 50px;
-  color: #674707;
-  text-transform: uppercase;
-  font-size: 36px;
-  font-family: 'fourseasons';
-  font-weight: 700;
-  text-align: center;
-  width: auto;
-  line-height: 1;
-  letter-spacing: 8px;
-}
 .header {
   padding: 47px 0;
   height: 290px;
@@ -371,6 +272,17 @@ p {
   margin-top: 50px;
   font-family: 'fourseasons';
 }
+@media screen and (max-width: 768px) {
+  #home .title {
+    font-size: 36.77px;
+    line-height: 39px;
+    margin-bottom: 25px;
+    margin-top: 0px;
+  }
+  #home .title br {
+    display: none;
+  }
+}
 #home p {
   font-family: 'fourseasons';
   color: #674707;
@@ -378,6 +290,15 @@ p {
   line-height: 25px;
   max-width: 480px;
   letter-spacing: 1.2px;
+}
+@media screen and (max-width: 768px) {
+  #home p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  #home p br {
+    display: none;
+  }
 }
 #home p img {
   margin-right: 9px;
@@ -391,10 +312,28 @@ p {
 #home .map-content {
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  #home .map-content {
+    margin-bottom: 25px;
+  }
+}
+#home .map-content .logo_comida_mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #home .map-content .logo_comida_mobile {
+    display: block;
+  }
+}
 #home .map-content .logo_comida {
   position: absolute;
   bottom: 0;
   left: 8%;
+}
+@media screen and (max-width: 768px) {
+  #home .map-content .logo_comida {
+    display: none;
+  }
 }
 #home .map-content .mapa {
   max-width: 100%;
@@ -465,6 +404,65 @@ p {
   top: 77%;
   left: 42%;
 }
+.modal-backdrop {
+  background-color: #1e4385;
+}
+.modal-backdrop.in {
+  opacity: .75;
+}
+.modal-header .close {
+  top: -74px;
+  position: absolute;
+  left: 50%;
+  margin-left: -55px;
+  opacity: 1;
+}
+.modal-title {
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #bd9647;
+}
+.modal-body {
+  color: #bd9647;
+  font-size: 16px;
+}
+.modal-dialog {
+  top: 50%;
+  margin-top: -11%;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .modal-dialog {
+    top: 70px;
+    margin-top: 0;
+  }
+}
+.modal-content {
+  background-color: #fff;
+  position: relative;
+  padding: 42px 0;
+}
+.modal-content::before {
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 73px;
+  background-image: url(../img/babado.png);
+  content: '';
+}
+.modal-content::after {
+  display: block;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 73px;
+  background-image: url(../img/babado.png);
+  content: '';
+  transform: rotate(180deg);
+}
 #interna {
   position: relative;
 }
@@ -472,6 +470,11 @@ p {
   font-size: 46px;
   color: #bd9647;
   margin: 0;
+}
+@media screen and (max-width: 768px) {
+  #interna .entry-title {
+    font-size: 35px;
+  }
 }
 #interna h3 {
   color: #674707;
@@ -484,12 +487,69 @@ p {
   text-transform: uppercase;
   font-size: 69px;
   margin-bottom: 20px;
+  position: relative;
+  padding: 0 55px;
+  display: inline-block;
+}
+#interna .categoria h1:before {
+  display: inline;
+  content: " ";
+  width: 30px;
+  height: 31px;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  background: url(../img/heart-left.png);
+}
+#interna .categoria h1:after {
+  display: inline;
+  content: " ";
+  width: 30px;
+  height: 31px;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  background: url(../img/heart-right.png);
+}
+@media screen and (max-width: 768px) {
+  #interna .categoria h1 {
+    font-size: 39px;
+    margin-top: 0;
+  }
 }
 #interna .ingredientes h2 {
   font-size: 24px;
   text-transform: uppercase;
   color: #bd9647;
+  position: relative;
   letter-spacing: 1px;
+  padding: 0 45px;
+  display: inline-block;
+}
+#interna .ingredientes h2:before {
+  display: inline;
+  content: " ";
+  width: 32px;
+  height: 19px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(../img/donabenta__arrow-left.png);
+}
+#interna .ingredientes h2:after {
+  display: inline;
+  content: " ";
+  width: 32px;
+  height: 19px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url(../img/donabenta__arrow-right.png);
+}
+@media screen and (max-width: 768px) {
+  #interna .ingredientes h2 {
+    font-size: 20px;
+  }
 }
 #interna .ingredientes p {
   font-family: 'fourseasons';
@@ -501,10 +561,38 @@ p {
   margin: 0;
 }
 #interna .modo_de_preparo h2 {
+  position: relative;
   font-size: 24px;
   text-transform: uppercase;
   color: #bd9647;
   letter-spacing: 1px;
+  padding: 0 45px;
+  display: inline-block;
+}
+#interna .modo_de_preparo h2:before {
+  display: inline;
+  content: " ";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(../img/modo.png);
+}
+#interna .modo_de_preparo h2:after {
+  display: inline;
+  content: " ";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: url(../img/modo.png);
+}
+@media screen and (max-width: 768px) {
+  #interna .modo_de_preparo h2 {
+    font-size: 20px;
+  }
 }
 #interna .modo_de_preparo p {
   font-family: 'fourseasons';
@@ -514,6 +602,14 @@ p {
   max-width: 480px;
   letter-spacing: 1.2px;
   margin: 0;
+}
+#interna .sidebar {
+  border-right: solid 1px #d2d2d2;
+}
+@media screen and (max-width: 768px) {
+  #interna .sidebar {
+    border: none;
+  }
 }
 #interna .sidebar .subcat-list-full ul {
   margin: 0;
@@ -528,11 +624,34 @@ p {
   margin: 20px;
   display: inline-block;
 }
+@media screen and (max-width: 768px) {
+  #interna .sidebar .subcat-list-full ul li {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+}
 #interna .sidebar .subcat-list-full ul li a {
   font-size: 24px;
   color: #bd9647;
   text-decoration: none;
   text-transform: capitalize;
+}
+@media screen and (max-width: 768px) {
+  #interna .sidebar .subcat-list-full ul li a {
+    font-size: 18px;
+  }
+}
+#interna .sidebar .subcat-list.mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #interna .sidebar .subcat-list {
+    display: none;
+  }
+  #interna .sidebar .subcat-list.mobile {
+    margin-top: 30px;
+    display: block;
+  }
 }
 #interna .sidebar .subcat-list ul {
   margin: 0;
@@ -546,9 +665,23 @@ p {
   text-transform: capitalize;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 768px) {
+  #interna .sidebar .subcat-list ul li {
+    font-size: 19px;
+    margin: 10px;
+    display: inline-block;
+  }
+}
 #interna .sidebar .subcat-list ul li a {
   font-size: 24px;
   color: #bd9647;
   text-decoration: none;
   text-transform: capitalize;
+}
+@media screen and (max-width: 768px) {
+  #interna .sidebar .subcat-list ul li a {
+    font-size: 19px;
+    margin: 10px;
+    display: inline-block;
+  }
 }

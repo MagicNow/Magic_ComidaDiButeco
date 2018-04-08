@@ -82,4 +82,19 @@ $post_title = get_the_title($postid);
         </div>
     </div>
 </div>
+<div class="sidebar">
+      <div class="subcat-list mobile">
+          <ul>
+              <?php   foreach ($postslist as $post) :  setup_postdata($post);
+
+              $subpost_title = get_the_title($post->ID);
+
+               ?>
+
+                <li>
+                  <a href="<?php the_permalink(); ?>"><?php echo strtolower($subpost_title); ?></a></li>
+                <?php endforeach; ?>
+           </ul>
+      </div>
+      </div>
 </article><!-- #post-<?php the_ID(); ?> -->
