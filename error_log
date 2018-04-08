@@ -1,4 +1,0 @@
-[08-Apr-2018 00:06:25 UTC] PHP Catchable fatal error:  Object of class WP_Term could not be converted to string in /home/drixdev182/public_html/drixdev.com/donabenta/wp-content/themes/donabenta/template-parts/content.php on line 26
-[08-Apr-2018 00:12:57 UTC] PHP Catchable fatal error:  Object of class WP_Term could not be converted to string in /home/drixdev182/public_html/drixdev.com/donabenta/wp-content/themes/donabenta/template-parts/content.php on line 28
-[08-Apr-2018 00:15:12 UTC] PHP Catchable fatal error:  Object of class WP_Term could not be converted to string in /home/drixdev182/public_html/drixdev.com/donabenta/wp-content/themes/donabenta/template-parts/content.php on line 29
-[08-Apr-2018 00:17:07 UTC] PHP Catchable fatal error:  Object of class WP_Term could not be converted to string in /home/drixdev182/public_html/drixdev.com/donabenta/wp-content/themes/donabenta/template-parts/content.php on line 29
