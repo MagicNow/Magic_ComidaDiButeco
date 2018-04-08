@@ -51,7 +51,7 @@ Template Name: home
                         <br> melhores butecos do Brasil.</p>
                     <p>Para visualizar as receitas, clique na <img src="<?php echo get_template_directory_uri(); ?>/img/flag.png"> de qualquer estado.
                     </p>
-                    <p><a href="#regulamento">Regulamento</a></p>
+                      <p><a data-toggle="modal" data-target="#regulamento" href="#regulamento">Regulamento</a></p>
                 </div>
                 <div class="col-md-6 text-left">
                     <div class="map-content clearfix">
