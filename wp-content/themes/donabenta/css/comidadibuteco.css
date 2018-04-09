@@ -345,6 +345,7 @@ p {
 .navbar-default .navbar-nav > li > a {
   color: #bd9647;
   font-size: 18px;
+  text-transform: capitalize;
 }
 .modal-backdrop {
   background-color: #1e4385;
