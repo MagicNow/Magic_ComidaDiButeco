@@ -36,6 +36,10 @@ Template Name: home
     </header>
     <section id="home" class="clearfix">
         <div class="container">
+            <div class="breadcrumb col-md-12 text-left">
+                <p><a href="/" class="tt">HOME</a>  </p>
+            </div>
+
             <div class="row">
                 <div class="col-md-6 text-left">
                     <h1 class="title">
