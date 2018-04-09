@@ -50,7 +50,7 @@ $category_link = get_category_link( $parentID );
                ?>
 
                 <li>
-                  <a href="<?php the_permalink(); ?>"><?php echo strtolower($subpost_title); ?></a></li>
+                  <a href="<?php if($postid == $post->ID){echo '#';}else{the_permalink();}  ?>" <?php if($postid == $post->ID){echo 'class="current"';} ?>><?php echo strtolower($subpost_title); ?></a></li>
                 <?php endforeach; ?>
            </ul>
       </div>
