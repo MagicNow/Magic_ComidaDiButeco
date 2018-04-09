@@ -20,6 +20,12 @@
 a:focus {
   outline: none;
 }
+a {
+  text-decoration: none;
+}
+a::hover {
+  text-decoration: underline;
+}
 /* Fonts */
 @font-face {
   font-family: 'fourseasons';
@@ -98,7 +104,7 @@ p {
   height: 220px;
   background-image: url(../img/footer.jpg);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   position: relative;
   background-repeat: no-repeat;
 }
@@ -178,20 +184,20 @@ p {
   text-decoration: none;
   text-transform: uppercase;
 }
+#home .logo_comida_mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #home .logo_comida_mobile {
+    display: block;
+  }
+}
 #home .map-content {
   position: relative;
 }
 @media screen and (max-width: 768px) {
   #home .map-content {
     margin-bottom: 25px;
-  }
-}
-#home .map-content .logo_comida_mobile {
-  display: none;
-}
-@media screen and (max-width: 768px) {
-  #home .map-content .logo_comida_mobile {
-    display: block;
   }
 }
 #home .map-content .logo_comida {
@@ -490,6 +496,9 @@ p {
     border: none;
   }
 }
+#interna .sidebar.col-md-12 {
+  border: none;
+}
 #interna .sidebar .subcat-list-full ul {
   margin: 0;
   padding: 0;
@@ -514,6 +523,9 @@ p {
   color: #bd9647;
   text-decoration: none;
   text-transform: capitalize;
+}
+#interna .sidebar .subcat-list-full ul li a:hover {
+  text-decoration: underline;
 }
 @media screen and (max-width: 768px) {
   #interna .sidebar .subcat-list-full ul li a {
