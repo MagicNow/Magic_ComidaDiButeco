@@ -19,7 +19,9 @@ $post_title = get_the_title($postid);
 ?>
 <article id="interna" <?php post_class(); ?>>
 <div class="container">
-
+  <div class="breadcrumb col-md-12 text-left">
+      <p><a href="/" class="tt">HOME</a> / <a href="<?php echo esc_url( $category_link ); ?>" class="tt"><?php echo $parentcat; ?></a>  </p>
+  </div>
 
   <div class="categoria col-md-12 text-center">
       <h1><?php echo $parentcat; ?>  </h1>
