@@ -623,4 +623,9 @@ p {
     margin: 10px;
     display: inline-block;
   }
+  #interna .sidebar .subcat-list ul li a::after {
+    content: ' | ';
+    display: inline-block;
+    margin: 0 0 0 15px;
+  }
 }
