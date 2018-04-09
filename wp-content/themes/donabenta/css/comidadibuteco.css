@@ -519,14 +519,19 @@ p {
 @media screen and (max-width: 768px) {
   #interna .sidebar .subcat-list-full ul li {
     font-size: 18px;
-    margin: 10px 0;
+    margin: 10px 7px;
   }
 }
 #interna .sidebar .subcat-list-full ul li a {
-  font-size: 24px;
+  font-size: 27px;
   color: #bd9647;
   text-decoration: none;
   text-transform: capitalize;
+}
+#interna .sidebar .subcat-list-full ul li a::after {
+  content: ' | ';
+  display: inline-block;
+  margin: 0 0px 0 15px;
 }
 #interna .sidebar .subcat-list-full ul li a:hover {
   text-decoration: underline;
