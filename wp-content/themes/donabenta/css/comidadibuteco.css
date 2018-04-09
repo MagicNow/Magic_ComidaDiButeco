@@ -383,6 +383,7 @@ p {
 #interna .contact p {
   font-size: 18px;
   color: #bd9647;
+  margin-bottom: 0;
 }
 #interna .entry-title {
   font-size: 46px;
@@ -531,8 +532,8 @@ p {
 #interna .info p {
   font-family: 'fourseasons';
   color: #1f4583;
-  font-size: 16px;
-  line-height: 29px;
+  font-size: 16px!important;
+  line-height: 29px!important;
   max-width: 480px;
   letter-spacing: 1.2px;
   margin: 0;

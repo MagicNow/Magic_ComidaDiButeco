@@ -60,8 +60,8 @@ $category_link = get_category_link( $parentID );
     <div class="col-md-12">
       <h1 class="entry-title"><?php echo $post_title?></h1>
       <div class="contact">
-        <p><?php the_field('endereco', $postid); ?> - <?php the_field('cidade', $postid); ?><br>
-          <?php the_field('telefone', $postid); ?>
+          <p> <?php if( get_field('endereco', $postid) ): ?><?php the_field('endereco', $postid); ?> -<?php endif; ?> <?php if( get_field('cidade', $postid) ): ?><?php the_field('cidade', $postid); ?><br><?php endif; ?>
+          <?php if( get_field('telefone', $postid) ): ?><?php the_field('telefone', $postid); ?><?php endif; ?>
       </div>
       <h3><?php the_field('nome_do_prato', $postid); ?></h3>
 
@@ -89,18 +89,18 @@ $category_link = get_category_link( $parentID );
 
          <?php if( get_field('tempo_de_preparo', $postid) ): ?>
             <h2>Tempo de preparo:</h2>
-            <?php the_field('tempo_de_preparo', $postid); ?>
+            <p><?php the_field('tempo_de_preparo', $postid); ?></p>
          <?php endif; ?>
 
          <?php if( get_field('rende', $postid) ): ?>
            <h2>Rendimento :</h2>
-            <?php the_field('rende', $postid); ?>
+            <p><?php the_field('rende', $postid); ?></p>
           <?php endif; ?>
 
 
          <?php if( get_field('porque', $postid) ): ?>
             <h2>História / Inspiração:</h2>
-            <?php the_field('porque', $postid); ?>
+            <p><?php the_field('porque', $postid); ?></p>
          <?php endif; ?>
 
 
