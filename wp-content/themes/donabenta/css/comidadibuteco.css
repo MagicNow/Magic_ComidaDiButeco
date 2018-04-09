@@ -377,6 +377,13 @@ p {
 #interna {
   position: relative;
 }
+#interna .contact {
+  margin-bottom: 5px;
+}
+#interna .contact p {
+  font-size: 18px;
+  color: #bd9647;
+}
 #interna .entry-title {
   font-size: 46px;
   color: #bd9647;
@@ -439,7 +446,21 @@ p {
     margin-top: 0;
   }
 }
-#interna .ingredientes h2 {
+#interna .info h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #bd9647;
+  position: relative;
+  letter-spacing: 1px;
+  padding: 0;
+  display: inline-block;
+}
+@media screen and (max-width: 768px) {
+  #interna .info h2 {
+    font-size: 20px;
+  }
+}
+#interna .info.ingredientes h2 {
   font-size: 24px;
   text-transform: uppercase;
   color: #bd9647;
@@ -448,7 +469,12 @@ p {
   padding: 0 45px;
   display: inline-block;
 }
-#interna .ingredientes h2:before {
+@media screen and (max-width: 768px) {
+  #interna .info.ingredientes h2 {
+    font-size: 20px;
+  }
+}
+#interna .info.ingredientes h2:before {
   display: inline;
   content: " ";
   width: 32px;
@@ -458,7 +484,7 @@ p {
   top: 0;
   background: url(../img/donabenta__arrow-left.png);
 }
-#interna .ingredientes h2:after {
+#interna .info.ingredientes h2:after {
   display: inline;
   content: " ";
   width: 32px;
@@ -468,21 +494,7 @@ p {
   top: 0;
   background: url(../img/donabenta__arrow-right.png);
 }
-@media screen and (max-width: 768px) {
-  #interna .ingredientes h2 {
-    font-size: 20px;
-  }
-}
-#interna .ingredientes p {
-  font-family: 'fourseasons';
-  color: #1f4583;
-  font-size: 16px;
-  line-height: 29px;
-  max-width: 480px;
-  letter-spacing: 1.2px;
-  margin: 0;
-}
-#interna .modo_de_preparo h2 {
+#interna .info.modo_de_preparo h2 {
   position: relative;
   font-size: 24px;
   text-transform: uppercase;
@@ -491,7 +503,7 @@ p {
   padding: 0 30px;
   display: inline-block;
 }
-#interna .modo_de_preparo h2:before {
+#interna .info.modo_de_preparo h2:before {
   display: inline;
   content: " ";
   width: 20px;
@@ -501,7 +513,7 @@ p {
   top: 0;
   background: url(../img/modo.png);
 }
-#interna .modo_de_preparo h2:after {
+#interna .info.modo_de_preparo h2:after {
   display: inline;
   content: " ";
   width: 20px;
@@ -512,11 +524,11 @@ p {
   background: url(../img/modo.png);
 }
 @media screen and (max-width: 768px) {
-  #interna .modo_de_preparo h2 {
+  #interna .info.modo_de_preparo h2 {
     font-size: 20px;
   }
 }
-#interna .modo_de_preparo p {
+#interna .info p {
   font-family: 'fourseasons';
   color: #1f4583;
   font-size: 16px;
