@@ -563,14 +563,14 @@ p {
 #interna .sidebar .subcat-list-full ul li a:hover {
   text-decoration: underline;
 }
+#interna .sidebar .subcat-list-full ul li a::after {
+  content: ' | ';
+  display: inline-block;
+  margin: 0 0 0 15px;
+}
 @media screen and (max-width: 768px) {
   #interna .sidebar .subcat-list-full ul li a {
     font-size: 18px;
-  }
-  #interna .sidebar .subcat-list-full ul li a::after {
-    content: ' | ';
-    display: inline-block;
-    margin: 0 0 0 15px;
   }
 }
 #interna .sidebar .subcat-list.mobile {
@@ -610,7 +610,7 @@ p {
   text-decoration: none;
   text-transform: capitalize;
 }
-#interna .sidebar .subcat-list ul li a::hover {
+#interna .sidebar .subcat-list ul li a:hover {
   text-decoration: underline;
 }
 #interna .sidebar .subcat-list ul li a.current {
