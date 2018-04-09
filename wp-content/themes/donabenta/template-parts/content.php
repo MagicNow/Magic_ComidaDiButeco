@@ -15,9 +15,14 @@ $parentcat = get_cat_name($category[0]->category_parent);
 $parentID = $category[0]->parent;
 $postid = get_the_ID();
 $post_title = get_the_title($postid);
+$category_link = get_category_link( $parentID );
 ?>
 <article id="interna" <?php post_class(); ?>>
 <div class="container">
+
+  <div class="breadcrumb col-md-12 text-left">
+      <p><a href="/" class="tt">HOME</a> / <a href="<?php echo esc_url( $category_link ); ?>" class="tt"><?php echo $parentcat; ?></a> / <a href="#"><?php echo $post_title?></a> </p>
+  </div>
 
 
   <div class="categoria col-md-12 text-center">
