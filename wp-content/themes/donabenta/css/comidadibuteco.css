@@ -193,7 +193,7 @@ p {
 }
 @media screen and (max-width: 768px) {
   #home .logo_comida_mobile {
-    display: block;
+    display: inline-block;
   }
 }
 #home .map-content {

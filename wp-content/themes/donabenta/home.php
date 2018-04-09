@@ -70,6 +70,9 @@ Template Name: home
                         <img src="<?php echo get_template_directory_uri(); ?>/img/mapa.png" class="mapa">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/logo_comidadibuteco.png" class="logo_comida">
                     </div>
+                     <div class="text-center">
+                      <img src="<?php echo get_template_directory_uri(); ?>/img/logo_comidadibuteco.png" class="logo_comida_mobile">
+                    </div>
                 </div>
             </div>
         </div>
