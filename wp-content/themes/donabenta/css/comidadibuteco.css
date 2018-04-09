@@ -301,6 +301,51 @@ p {
   top: 77%;
   left: 42%;
 }
+#menu-mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #menu-mobile {
+    display: block;
+    margin-top: -40px;
+    margin-bottom: 40px;
+  }
+}
+.navbar-brand {
+  padding: 18px 15px;
+}
+.navbar-default .navbar-brand {
+  color: #bd9647;
+  text-transform: uppercase;
+  float: right;
+}
+.navbar-default .navbar-toggle {
+  border-color: #03b1e5;
+}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: #0000;
+}
+.navbar-default .navbar-toggle:focus .icon-bar {
+  background-color: #03b1e5;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #03b1e5;
+}
+.navbar-default {
+  background-color: #0000;
+  border-color: #0000;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  color: #fff;
+  background-color: #03b1e5;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #bd9647;
+  font-size: 18px;
+}
 .modal-backdrop {
   background-color: #1e4385;
 }
