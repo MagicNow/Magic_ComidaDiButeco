@@ -98,6 +98,10 @@ p {
 }
 .header .main_logo {
   margin-top: 25px;
+  transition: all 0.2s ease-in-out;
+}
+.header .main_logo:hover {
+  transform: scale(1.25);
 }
 .footer {
   padding: 47px 0;
