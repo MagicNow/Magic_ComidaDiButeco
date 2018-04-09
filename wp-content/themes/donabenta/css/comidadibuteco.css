@@ -101,7 +101,7 @@ p {
   transition: all 0.2s ease-in-out;
 }
 .header .main_logo:hover {
-  transform: scale(1.25);
+  transform: scale(1.1);
 }
 .footer {
   padding: 47px 0;
