@@ -162,7 +162,7 @@ p {
     display: none;
   }
 }
-#home p {
+#home .body p {
   font-family: 'fourseasons';
   color: #674707;
   font-size: 20px;
@@ -171,18 +171,18 @@ p {
   letter-spacing: 1.2px;
 }
 @media screen and (max-width: 768px) {
-  #home p {
+  #home .body p {
     font-size: 16px;
     line-height: 20px;
   }
-  #home p br {
+  #home .body p br {
     display: none;
   }
 }
-#home p img {
+#home .body p img {
   margin-right: 9px;
 }
-#home p a {
+#home .body p a {
   margin-top: 30px;
   display: block;
   text-decoration: none;
@@ -339,13 +339,13 @@ p {
   margin-bottom: 0px;
   padding: 0;
 }
-.breadcrumb a {
+.breadcrumb p a {
   color: #bd9647;
   display: inline-block;
   margin: 0 10px;
   font-size: 20px;
 }
-.breadcrumb a.tt {
+.breadcrumb p a.tt {
   text-transform: uppercase;
 }
 .modal-content {

@@ -40,7 +40,7 @@ Template Name: home
                 <p><a href="/" class="tt">HOME</a>  </p>
             </div>
 
-            <div class="row">
+            <div class="row body">
                 <div class="col-md-6 text-left">
                     <h1 class="title">
                       CONHEÇA AS RECEITAS DO<Br>
