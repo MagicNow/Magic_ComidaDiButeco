@@ -243,6 +243,12 @@ p {
   top: 15%;
   left: 76%;
 }
+@media screen and (max-width: 768px) {
+  #home .map-content .flag.ce {
+    top: 12%;
+    left: 73%;
+  }
+}
 #home .map-content .flag.pe {
   top: 22%;
   left: 81%;
@@ -254,6 +260,12 @@ p {
 #home .map-content .flag.df {
   top: 40%;
   left: 57%;
+}
+@media screen and (max-width: 768px) {
+  #home .map-content .flag.df {
+    top: 37%;
+    left: 54%;
+  }
 }
 #home .map-content .flag.mg {
   top: 47%;
@@ -274,6 +286,12 @@ p {
 #home .map-content .flag.pr {
   top: 62%;
   left: 46%;
+}
+@media screen and (max-width: 768px) {
+  #home .map-content .flag.pr {
+    top: 55%;
+    left: 43%;
+  }
 }
 #home .map-content .flag.sc {
   top: 68%;
