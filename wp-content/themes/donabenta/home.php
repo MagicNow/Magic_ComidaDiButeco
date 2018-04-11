@@ -16,7 +16,10 @@ get_header();
                       CONHEÇA AS RECEITAS DO<Br>
                       COMIDA DI BUTECO 2018
                    </h1>
-                    <p>Seja bem-vindo ao Comida di Buteco, o maior concurso de comida raiz do Brasil! A competição premia os melhores botecos ao redor de todo o nosso país. E nós de Dona Benta resolvemos participar dessa festa para acrescentar uma pitada do nosso sabor caseiro! Vamos conferir os participantes e provar todas essas delícias? Confira no mapa ao lado os endereços que estão na disputa, suas receitas Dona Benta e aproveite para conferir todas pessoalmente. Bom apetite! <3 </p>
+                   <?php if( get_field('texto_descricao') ): ?>
+                      <?php the_field('texto_descricao'); ?>
+                   <?php endif; ?>
+                    <!-- <p>Seja bem-vindo ao Comida di Buteco, o maior concurso de comida raiz do Brasil! A competição premia os melhores botecos ao redor de todo o nosso país. E nós de Dona Benta resolvemos participar dessa festa para acrescentar uma pitada do nosso sabor caseiro! Vamos conferir os participantes e provar todas essas delícias? Confira no mapa ao lado os endereços que estão na disputa, suas receitas Dona Benta e aproveite para conferir todas pessoalmente. Bom apetite! <3 </p> -->
                     <p>Para visualizar as receitas, clique na <img src="<?php echo get_template_directory_uri(); ?>/img/flag.png"> de qualquer estado.
                     </p>
                       <p><a data-toggle="modal"  data-target="#regulamento" href="#regulamento">Regulamento</a></p>
@@ -58,14 +61,17 @@ get_header();
                     <h5 class="modal-title" id="regulamentoLabel">Regulamento</h5>
                 </div>
                 <div class="modal-body">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan libero tellus, sit amet sodales arcu posuere id. Proin id nisi rutrum, commodo nunc a, auctor nibh</p>
+                  <?php if( get_field('regulamento') ): ?>
+                      <?php the_field('regulamento'); ?>
+                   <?php endif; ?>
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan libero tellus, sit amet sodales arcu posuere id. Proin id nisi rutrum, commodo nunc a, auctor nibh</p>
                     <p>Quisque in eros sed arcu scelerisque efficitur. Sed rhoncus ullamcorper quam ac consequat. Vivamus fringilla magna metus, eget dictum sem rhoncus ac.
                         <p>Pellentesque in tempus libero, et viverra metus. Suspendisse at libero a diam ultrices posuere. Aenean felis ipsum, tincidunt et nunc sit amet, </p>
                         vestibulum ultricies lacus.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan libero tellus, sit amet sodales arcu posuere id. Proin id nisi rutrum, commodo </p>
                     nunc a, auctor nibh
                     <p>Quisque in eros sed arcu scelerisque efficitur. Sed rhoncus ullamcor.
-                    </p>
+                    </p> -->
                 </div>
                 <div class="modal-footer">
                 </div>
