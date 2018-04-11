@@ -4,17 +4,6 @@ Template Name: home
 */
 get_header();
 ?>
-  <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <div class="header-content clearfix">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/donabenta__logo.png" class="main_logo">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
     <section id="home" class="clearfix">
         <div class="container">
             <div class="breadcrumb col-md-12 text-left">
@@ -85,7 +74,6 @@ get_header();
         </div>
     </div>
     <?php
-get_sidebar();
 get_footer();
 
 ?>
